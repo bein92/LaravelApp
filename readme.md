@@ -38,7 +38,7 @@ It can be found in ~/.homestead (for Unix like OS)
 
         sites:  
   
-      - map: homestead.app
+        - map: homestead.app
       
         to: /home/vagrant/Code/Laravel/public
         
@@ -46,11 +46,11 @@ It can be found in ~/.homestead (for Unix like OS)
    
       sites:  
   
-    - map: homestead.app
+        - map: homestead.app
       
-      to: /home/vagrant/Code/Laravel/public
+        to: /home/vagrant/Code/Laravel/public
         
-      hhvm: true
+        hhvm: true
   
   
   if you would like to use [HHVM] (http://hhvm.com/)
