@@ -75,3 +75,21 @@ It can be found in ~/.homestead (for Unix like OS)
          
  if you prefer [nfs filesystem](http://docs.vagrantup.com/v2/synced-folders/nfs.html)
  
+#### Using Local Apache Php Mysql
+ 
+ * Install composer using:
+ 
+ ```
+ curl -sS https://getcomposer.org/installer | php &&  sudo mv composer.phar /usr/local/bin/composer
+ ```
+ 
+ * Clone project to your local webserver folder using git
+ ```
+ git clone https://github.com/bein92/LaravelApp.git
+ ```
+ 
+ * Run ``` comoser update ``` command to add missing dependencies
+ 
+ * Edit ``.env`` file for your DB connection
+ 
+ * Run ``php artisan migrate`` to create DB schema
