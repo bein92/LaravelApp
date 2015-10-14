@@ -1,0 +1,70 @@
+<html>
+<head>
+    <?php echo HTML::style('css/bootstrap-theme.min.css'); ?>
+
+    <?php echo HTML::style('css/bootstrap.min.css'); ?>
+
+    <title>Blog Application Using aravel 5.1</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#">My Blog</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <?php echo FORM::open(array('class'=>'navbar-form navbar-right')); ?>
+
+            <?php echo FORM::label('','',array('class'=>'glyphicon glyphicon-user text-success','for' => 'email')); ?>
+
+            <?php echo FORM::text('email','Email', array('class' => 'form-control')); ?>
+
+            <?php echo FORM::label('','',array('class'=>'glyphicon glyphicon-lock text-success','for' => 'email')); ?>
+
+            <?php echo FORM::password('password', array('class' => 'form-control')); ?>
+
+            <?php echo FORM::button('login', array('class' => 'btn btn-success btn-lg', 'type' => 'submit')); ?>
+
+            <?php echo FORM::close(); ?>
+
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h2>Blog articles</h2>
+    </div>
+</div>
+
+    <?php foreach($articles as $article): ?>
+        <div class="row">
+            <div class="col-xs-2"></div>
+  <article class="col-xs-8 ">
+            <h4>    <?php echo e($article->title); ?>    </h4>
+            <p>     <?php echo e($article->body); ?>     </p>
+            <p><a class="btn btn-default" href="/articles/<?php echo e($article->id); ?>" role="button">Подробнее</a></p>
+  </article>
+            <div class="col-xs-2"></div>
+        </div>
+    <?php endforeach; ?>
+
+<div class="container">
+
+
+    <hr>
+    <div class="col-xs-2"></div>
+    <footer class="col-xs-2">
+        <p>&copy; Karnaukh Mikhail 2015</p>
+    </footer>
+    <div class="col-xs-2"></div>
+    <?php echo HTML::script('//code.jquery.com/jquery-1.11.3.min.js'); ?>
+
+    <?php echo HTML::script('js/bootstrap.min.js'); ?>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<?php echo HTML::style('css/bootstrap-theme.min.css'); ?>
+
+<?php echo HTML::style('css/bootstrap.min.css'); ?>
+
+<div class="col-xs-2"></div>
+<div class="col-xs-8">
+    <?php echo FORM::open(array('acton'=>'/auth/register','method'=>'POST')); ?>
+
+    <?php echo csrf_field(); ?>
+
+
+    <div class="col-xs-8">
+        <?php echo FORM::label('name'); ?>
+
+        <?php echo FORM::text('name','Username',array('class'=>'pull-right')); ?>
+
+    </div class="col-xs-8">
+
+    <div class="col-xs-8">
+        <?php echo FORM::label('email','Email'); ?>
+
+        <?php echo FORM::email('email','your@mail.com',array('class'=>'pull-right')); ?>
+
+    </div>
+
+    <div class="col-xs-8">
+        <?php echo FORM::label('pass','Password'); ?>
+
+        <?php echo FORM::password('pass',array('class'=>'pull-right')); ?>
+
+    </div>
+
+    <div class="col-xs-8">
+        <?php echo FORM::label('pass_conf','Confirm password'); ?>
+
+        <?php echo FORM::password('pass_conf',array('class'=>'pull-right')); ?>
+
+    </div>
+
+    <div class="col-xs-8">
+        <?php echo FORM::submit('Register',array('class'=>'btn-success btn-lg pull-right')); ?>
+
+    </div>
+    <?php echo FORM::close(); ?>
+
+</div>
+<div class="col-xs-2"></div>
+<?php echo HTML::script('//code.jquery.com/jquery-1.11.3.min.js'); ?>
+
+<?php echo HTML::script('js/bootstrap.min.js'); ?>
