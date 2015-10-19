@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="{{ url( elixir('css/all.css') ) }}">
+	{{--<link rel="stylesheet" type="text/css" href="{{ url( elixir('css/all.css') ) }}">--}}
 </head>
 <body>
 	@include('partials.nav')

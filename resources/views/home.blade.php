@@ -1,5 +1,9 @@
 @extends('app')
 
+
+@include('partials.nav')
+
+
 @section('content')
 <div class="container">
 	<div class="row">

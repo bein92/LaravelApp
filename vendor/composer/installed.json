@@ -2727,50 +2727,6 @@
         ]
     },
     {
-        "name": "paragonie/random_compat",
-        "version": "1.0.5",
-        "version_normalized": "1.0.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/paragonie/random_compat.git",
-            "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
-            "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.2.0"
-        },
-        "time": "2015-10-08 12:57:25",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "lib/random.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Paragon Initiative Enterprises",
-                "email": "security@paragonie.com",
-                "homepage": "https://paragonie.com"
-            }
-        ],
-        "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
-        "keywords": [
-            "csprng",
-            "pseudorandom",
-            "random"
-        ]
-    },
-    {
         "name": "monolog/monolog",
         "version": "1.17.2",
         "version_normalized": "1.17.2.0",
@@ -3035,17 +2991,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "4.8.13",
-        "version_normalized": "4.8.13.0",
+        "version": "4.8.14",
+        "version_normalized": "4.8.14.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "be067d6105286b74272facefc2697038f8807b77"
+            "reference": "b4900675926860bef091644849305399b986efa2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/be067d6105286b74272facefc2697038f8807b77",
-            "reference": "be067d6105286b74272facefc2697038f8807b77",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b4900675926860bef091644849305399b986efa2",
+            "reference": "b4900675926860bef091644849305399b986efa2",
             "shasum": ""
         },
         "require": {
@@ -3072,7 +3028,7 @@
         "suggest": {
             "phpunit/php-invoker": "~1.1"
         },
-        "time": "2015-10-14 13:49:40",
+        "time": "2015-10-17 15:03:30",
         "bin": [
             "phpunit"
         ],
@@ -3105,6 +3061,53 @@
             "phpunit",
             "testing",
             "xunit"
+        ]
+    },
+    {
+        "name": "paragonie/random_compat",
+        "version": "1.0.8",
+        "version_normalized": "1.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/paragonie/random_compat.git",
+            "reference": "7fe2420f8ad46aa08d5b317c92a148611d366d88"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/paragonie/random_compat/zipball/7fe2420f8ad46aa08d5b317c92a148611d366d88",
+            "reference": "7fe2420f8ad46aa08d5b317c92a148611d366d88",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "suggest": {
+            "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+        },
+        "time": "2015-10-18 21:39:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/random.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Paragon Initiative Enterprises",
+                "email": "security@paragonie.com",
+                "homepage": "https://paragonie.com"
+            }
+        ],
+        "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+        "keywords": [
+            "csprng",
+            "pseudorandom",
+            "random"
         ]
     }
 ]
